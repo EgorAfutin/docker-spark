@@ -15,7 +15,7 @@ RUN apt-get update && \
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-ARG MESOS_VERSION=1.7.0
+ARG MESOS_VERSION=1.6.0
 
 RUN touch /usr/local/bin/systemctl && chmod +x /usr/local/bin/systemctl
 RUN apt-get install -y gnupg
